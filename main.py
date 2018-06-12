@@ -8,14 +8,14 @@ from flask import Flask, render_template, request
 # from werkzeug.utils import redirect
 
 app = Flask(__name__)
-import sqlite3 as sql
-import pandas as pd
-dbc = sql.connect('database.db')
-dataframe1 = pd.read_csv('edata.csv')
+# import sqlite3 as sql
+# import pandas as pd
+# dbc = sql.connect('database.db')
+# dataframe1 = pd.read_csv('edata.csv')
 # Referenced from https://stackoverflow.com/questions/43730422/how-to-split-one-column-into-multiple-columns-in-pandas-using-regular-expression
-dataframe1[['date', 'time'] ]= dataframe1['time'].str.split('T', expand=True)
-dataframe1[['time']]= dataframe1['time'].str.split('.').str[0]
-dataframe1.to_sql('testtable1', dbc, if_exists='replace')
+# dataframe1[['date', 'time'] ]= dataframe1['time'].str.split('T', expand=True)
+# dataframe1[['time']]= dataframe1['time'].str.split('.').str[0]
+# dataframe1.to_sql('testtable1', dbc, if_exists='replace')
 
 
 @app.route('/')
