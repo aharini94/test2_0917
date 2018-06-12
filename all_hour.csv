@@ -1,0 +1,12 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2018-04-09T20:22:53.510Z,19.4188328,-155.2791595,1.41,1.87,ml,18,58,0.004803,0.16,hv,hv70254407,2018-06-09T20:28:34.660Z,"4km WSW of Volcano, Hawaii",earthquake,0.25,0.24,0.26,8,automatic,hv,hv
+2018-06-09T20:17:03.770Z,19.376667,-155.2826691,3.76,1.84,ml,14,186,0.009855,0.2,hv,hv70254392,2018-06-09T20:23:15.030Z,"7km SW of Volcano, Hawaii",earthquake,0.89,0.73,0.02,4,automatic,hv,hv
+2018-06-09T20:09:48.130Z,36.4481667,-118.2388333,7.96,2.36,ml,16,143,0.1282,0.17,ci,ci38194816,2018-06-09T20:20:48.940Z,"22km SW of Lone Pine, CA",earthquake,0.83,1.4,0.135,26,automatic,ci,ci
+2018-05-09T20:07:01.650Z,19.4060001,-155.2818298,0.34,1.74,md,10,122,0.0118,0.09,hv,hv70254352,2018-06-09T20:10:34.640Z,"5km WSW of Volcano, Hawaii",earthquake,0.31,0.45,0.24,4,automatic,hv,hv
+2018-06-09T19:55:21.750Z,61.4954,-149.9812,46.2,2.3,ml,,,,0.7,ak,ak19741284,2018-06-09T20:03:59.355Z,"3km SSW of Big Lake, Alaska",earthquake,,0.7,,,automatic,ak,ak
+2018-06-09T19:50:04.930Z,-5.8487,151.8823,56.53,5.1,mb,,42,1.67,0.81,us,us1000ema9,2018-06-09T20:05:35.040Z,"170km SSW of Kokopo, Papua New Guinea",earthquake,7.6,6.6,0.066,74,reviewed,us,us
+2018-06-09T19:48:39.170Z,33.9876667,-117.8471667,23.69,1.9,ml,20,197,0.1091,0.31,ci,ci38194808,2018-06-09T19:52:13.969Z,"4km SSE of Walnut, CA",earthquake,1.17,1.99,0.336,26,automatic,ci,ci
+2018-06-09T19:42:27.830Z,19.3968334,-155.2611694,0.94,2.13,ml,19,91,0.004799,0.15,hv,hv70254297,2018-06-09T19:48:09.390Z,"4km SSW of Volcano, Hawaii",earthquake,0.22,0.17,0.26,12,automatic,hv,hv
+2018-06-09T19:42:17.500Z,19.4099998,-155.2630005,1.82,1.88,ml,8,74,0.003606,0.16,hv,hv70254292,2018-06-09T19:47:57.480Z,"3km SW of Volcano, Hawaii",earthquake,0.82,0.46,0.27,13,automatic,hv,hv
+2018-06-09T19:38:27.220Z,19.5153332,-155.094162,4.24,2.39,ml,12,323,0.1795,0.31,hv,hv70254277,2018-06-09T19:44:10.730Z,"1km WNW of Fern Acres, Hawaii",earthquake,2.32,24.68,0.44,8,automatic,hv,hv
+2018-04-09T19:33:50.170Z,33.181,-115.62,1.37,1.46,ml,12,108,0.003026,0.18,ci,ci38194800,2018-06-09T19:37:21.218Z,"12km SW of Niland, CA",earthquake,0.48,0.35,0.224,27,automatic,ci,ci

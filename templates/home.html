@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<body>
+<center>
+<header> <h1> HARINI AKKANAPRAGADA</h1> </header>
+        <center> <h2> 1001580917</h2></center>
+<br> <br>
+<h2><center><a href = "/list">Display details of ALL earthquake</a></center></h2>
+    <form action="{{url_for('list')}}" method="POST">
+
+       {{ total4 }}
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>date</td>
+            <td>latitude</td>
+            <td>longitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>net</td>
+            <td>id</td>
+            <td>updated</td>
+            <td>place</td>
+            <td>type</td>
+            <td>horizontalError</td>
+            <td>depthError</td>
+            <td>magError</td>
+            <td>magNst</td>
+            <td>status</td>
+            <td>locationSource</td>
+            <td>magSource</td>
+         </thead>
+
+         {% for row in rows4 %}
+         <tr>
+            <td>{{row["time"]}}</td>
+            <td>{{row["date"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td> {{ row["longitude"]}}</td>
+            <td>{{row["depth"]}}</td>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["magType"]}}</td>
+            <td>{{row["nst"]}}</td>
+            <td>{{row["gap"]}}</td>
+            <td>{{row["dmin"]}}</td>
+            <td>{{row["rms"]}}</td>
+            <td>{{row["net"]}}</td>
+            <td>{{row["id"]}}</td>
+            <td>{{row["updated"]}}</td>
+            <td>{{row["place"]}}</td>
+            <td>{{row["type"]}}</td>
+            <td>{{row["horizontalError"]}}</td>
+            <td>{{row["depthError"]}}</td>
+            <td>{{row["magError"]}}</td>
+            <td>{{row["magNst"]}}</td>
+            <td>{{row["status"]}}</td>
+            <td>{{row["locationSource"]}}</td>
+            <td>{{row["magSource"]}}</td>
+         {% endfor %}
+         </tr>
+      </table>
+    </form>
+<h3> QUERY 1</h3>
+<br>Display details of earthquake between a magnitude
+    <form action="{{url_for('query1')}}" method="POST">
+        <input type="text" name="mag">
+        <input type="text" name="maga">
+        <input type="submit" name="edit">
+        {{ total1  ,  totala  ,  totalb }}
+    </form>
+<br>
+<br><h3> QUERY 2</h3>
+ <br>   Show earthquakes of range between
+    <form action="{{url_for('query2')}}" method="POST">
+        <input type="text" name="query2a">
+        and
+        <input type="text" name="query2b">
+        from
+        <input type="text" name="query2c">
+       to
+       <input type="text" name="query2d">
+        <input type="submit" name="day">
+       {{ total2 }}
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>date</td>
+            <td>latitude</td>
+            <td>longitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>net</td>
+            <td>id</td>
+            <td>updated</td>
+            <td>place</td>
+            <td>type</td>
+            <td>horizontalError</td>
+            <td>depthError</td>
+            <td>magError</td>
+            <td>magNst</td>
+            <td>status</td>
+            <td>locationSource</td>
+            <td>magSource</td>
+
+
+         </thead>
+
+         {% for row in rows2 %}
+         <tr>
+            <td>{{row["time"]}}</td>
+            <td>{{row["date"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td> {{ row["longitude"]}}</td>
+            <td>{{row["depth"]}}</td>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["magType"]}}</td>
+            <td>{{row["nst"]}}</td>
+            <td>{{row["gap"]}}</td>
+            <td>{{row["dmin"]}}</td>
+            <td>{{row["rms"]}}</td>
+            <td>{{row["net"]}}</td>
+            <td>{{row["id"]}}</td>
+            <td>{{row["updated"]}}</td>
+            <td>{{row["place"]}}</td>
+            <td>{{row["type"]}}</td>
+            <td>{{row["horizontalError"]}}</td>
+            <td>{{row["depthError"]}}</td>
+            <td>{{row["magError"]}}</td>
+            <td>{{row["magNst"]}}</td>
+            <td>{{row["status"]}}</td>
+            <td>{{row["locationSource"]}}</td>
+            <td>{{row["magSource"]}}</td>
+         {% endfor %}
+         </tr>
+      </table>
+    </form>
+<br>
+<br><h3> QUERY 3</h3>
+<br> Show earthquakes of langtitude and longtitude between
+    <form action="{{url_for('query3')}}" method="POST">
+        <input type="text" name="query3a">
+        and
+        <input type="text" name="query3b">
+        <input type="submit" name="edit">
+{{total3}}
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>date</td>
+            <td>latitude</td>
+            <td>longitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>net</td>
+            <td>id</td>
+            <td>updated</td>
+            <td>place</td>
+            <td>type</td>
+            <td>horizontalError</td>
+            <td>depthError</td>
+            <td>magError</td>
+            <td>magNst</td>
+            <td>status</td>
+            <td>locationSource</td>
+            <td>magSource</td>
+         </thead>
+
+         {% for row in rows3 %}
+         <tr>
+            <td>{{row["time"]}}</td>
+            <td>{{row["date"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td> {{ row["longitude"]}}</td>
+            <td>{{row["depth"]}}</td>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["magType"]}}</td>
+            <td>{{row["nst"]}}</td>
+            <td>{{row["gap"]}}</td>
+            <td>{{row["dmin"]}}</td>
+            <td>{{row["rms"]}}</td>
+            <td>{{row["net"]}}</td>
+            <td>{{row["id"]}}</td>
+            <td>{{row["updated"]}}</td>
+            <td>{{row["place"]}}</td>
+            <td>{{row["type"]}}</td>
+            <td>{{row["horizontalError"]}}</td>
+            <td>{{row["depthError"]}}</td>
+            <td>{{row["magError"]}}</td>
+            <td>{{row["magNst"]}}</td>
+            <td>{{row["status"]}}</td>
+            <td>{{row["locationSource"]}}</td>
+            <td>{{row["magSource"]}}</td>
+         {% endfor %}
+         </tr>
+      </table>
+    </form>
+
+<br><h3> QUERY 5</h3>
+<br> Show earthquakes of langtitude and longtitude between
+    <form action="{{url_for('query5')}}" method="POST">
+        <input type="text" name="query5a">
+                <input type="text" name="query5b">
+        <input type="submit" name="edit">
+
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>date</td>
+            <td>latitude</td>
+            <td>longitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>net</td>
+            <td>id</td>
+            <td>updated</td>
+            <td>place</td>
+            <td>type</td>
+            <td>horizontalError</td>
+            <td>depthError</td>
+            <td>magError</td>
+            <td>magNst</td>
+            <td>status</td>
+            <td>locationSource</td>
+            <td>magSource</td>
+         </thead>
+
+         {% for row in rows5 %}
+         <tr>
+            <td>{{row["time"]}}</td>
+            <td>{{row["date"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td> {{ row["longitude"]}}</td>
+            <td>{{row["depth"]}}</td>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["magType"]}}</td>
+            <td>{{row["nst"]}}</td>
+            <td>{{row["gap"]}}</td>
+            <td>{{row["dmin"]}}</td>
+            <td>{{row["rms"]}}</td>
+            <td>{{row["net"]}}</td>
+            <td>{{row["id"]}}</td>
+            <td>{{row["updated"]}}</td>
+            <td>{{row["place"]}}</td>
+            <td>{{row["type"]}}</td>
+            <td>{{row["horizontalError"]}}</td>
+            <td>{{row["depthError"]}}</td>
+            <td>{{row["magError"]}}</td>
+            <td>{{row["magNst"]}}</td>
+            <td>{{row["status"]}}</td>
+            <td>{{row["locationSource"]}}</td>
+            <td>{{row["magSource"]}}</td>
+         {% endfor %}
+         </tr>
+      </table>
+    </form>
+    </center>
+</body>
+</html>
